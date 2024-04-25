@@ -1,6 +1,11 @@
 import numpy as np
 
 def calculate(list):
+    # check if list is not 9 elements
+    if len(list) != 9:
+        raise ValueError('List must contain nine numbers.')
+        return
+
     # convert list into numpy 3 x 3 array
     arr = np.array(list).reshape(3,3)
 
